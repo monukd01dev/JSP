@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <servlet>
+        <servlet-name>config</servlet-name>
+        <jsp-file>/config.jsp</jsp-file>
+
+        <init-param>
+            <param-name>admin_name</param-name>
+            <param-value>monukd</param-value>
+        </init-param>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>config</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>
+
+<!--    (application) context-param-->
+
+    <servlet>
+        <servlet-name>application</servlet-name>
+        <jsp-file>/application.jsp</jsp-file>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>application</servlet-name>
+        <url-pattern>/application</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>plan</param-name>
+        <param-value>Run!</param-value>
+    </context-param>
+</web-app>
