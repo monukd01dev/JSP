@@ -2,8 +2,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: monukd01dev
-  Date: 22-08-2023
-  Time: 20:48
+  Date: 23-08-2023
+  Time: 23:44
   
   Follow on 
   GitHub    :   https://github.com/monukd01dev  
@@ -11,14 +11,24 @@
   Twitter   :   https://twitter.com/monukd01dev 
    
 --%>
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>Set Tag</title>
+    <title>Redirect Tag</title>
 </head>
 <body>
-    <c:set var="income" scope="session" value="${10000*4}"/>
-    <h1>My Expectations : <c:out value="${income}"/></h1>
+
+    <h1>Hello Friend</h1>
+    <%
+        String name = "monu kumar";
+        try {
+            Thread.sleep(3000);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    %>
+
+    <c:redirect url="paramTag.jsp"/>
 </body>
 </html>

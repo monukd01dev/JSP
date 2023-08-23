@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>JSTL | CoreTag</title>
 </head>
 <body>
@@ -15,14 +16,14 @@
         <li><a href="removeTag.jsp">Remove Tag</a></li>
         <li><a href="catchTag.jsp">Catch Tag</a></li>
         <li><a href="ifTag.jsp">If Tag</a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li><a href="chooseTag.jsp">Choose Tag</a></li>
+        <li><a href="whenTag.jsp">When Tag</a></li>
+        <li><a href="otherwiseTag.jsp">Otherwise Tag</a></li>
+        <li><a href="forEachTag.jsp">ForEach Tag</a></li>
+        <li><a href="forTokens.jsp">ForToken Tag</a></li>
+        <li><a href="paramTag.jsp">Param Tag</a></li>
+        <li><a href="redirectTag.jsp">Redirect Tag</a></li>
+        <li><a href="urlTag.jsp">URL Tag</a></li>
     </ol>
 </body>
 </html>

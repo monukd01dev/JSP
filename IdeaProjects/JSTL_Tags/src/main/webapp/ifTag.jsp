@@ -22,5 +22,14 @@
         <br>
         <p> There is an exception: ${collectedException.message}</p>
     </c:if>
+
+    <c:set var="number" scope="session" value="${5}"/>
+    <h3>The value of number is : <c:out value="${number}"/></h3>
+    <c:if test="${number%2 == 0}">
+        <h4>The Number <c:out value="${number}"/> is Even.</h4>
+    </c:if>
+
+
+
 </body>
 </html>

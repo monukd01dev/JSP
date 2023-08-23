@@ -14,6 +14,7 @@
 
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Catch Tag</title>
 </head>
 <body>
