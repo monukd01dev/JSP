@@ -11,6 +11,9 @@
 
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.Arrays" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -19,8 +22,17 @@
 </head>
 <body>
     <h1>forEach Tag</h1>
+    <%
+        List<String> skills = new ArrayList<>(Arrays.asList("Java","JavaScript","Python","C/C++"));
+        request.setAttribute("skills",skills);
+    %>
     <c:forEach var="j" begin="1" end="10">
         <p>The Value is ${j}</p>
     </c:forEach>
+    <p class="error">Skill List : </p>
+    <c:forEach var="temp" items="${skills}">
+        <p>${temp}</p>
+    </c:forEach>
+
 </body>
 </html>
